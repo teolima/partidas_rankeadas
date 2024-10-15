@@ -19,10 +19,10 @@ function menu() {
 
         switch (opcao) {
             case 1:
-                exibirVitorias();
+                exibirVitorias()
                 break
             case 2:
-                exibirSaldoRankeados();
+                exibirSaldoRankeados()
                 break
             case 3:
                 console.log("Opção escolhida: Sair.")
@@ -33,6 +33,7 @@ function menu() {
                 break
         }
         
+
         menu()
     })
 }
@@ -53,7 +54,7 @@ function exibirSaldoRankeados() {
 }
 
 function resultVitoria(numVitorias, numDerrotas, nomeHeroi) {
-    let saldoVitoria = numVitorias + numDerrotas;
+    let saldoVitoria = numVitorias + numDerrotas
     let nivel
     if (saldoVitoria <= 10) {
         nivel =  "Ferro"
@@ -81,7 +82,7 @@ function saldoRankeados(vitorias, derrotas) {
     } else {
         console.log("Negativo: " + saldoRanque)
     }
-    console.log(`${resultado}: ${saldoRanque}`);
+    console.log(`${resultado}: ${saldoRanque}`)
     return saldoRanque
 }
 menu()
